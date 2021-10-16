@@ -1,5 +1,5 @@
 # Karate-API-Testing-Intro
 
-This is API Testing for Get and Post method
+This is API Testing using Karate for Get and Post method
 
 Happy Testing :)
