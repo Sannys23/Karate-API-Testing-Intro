@@ -1,9 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.749 sec <<< FAILURE!
-[1:3] get post list([posts/post] Get post)  Time elapsed: 0.718 sec  <<< ERROR!
-com.intuit.karate.KarateException: http call failed after 686 milliseconds for url: https://jsonplaceholder.typicode.com/posts
-classpath:posts/post.feature:6
-	at <feature>.: When method get (classpath:posts/post.feature:6:6)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.124 sec

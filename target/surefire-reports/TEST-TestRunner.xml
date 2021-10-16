@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="TestRunner" time="0.718" errors="1" skipped="0">
+<testsuite tests="2" failures="0" name="TestRunner" time="9.153" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre/lib"/>
@@ -15,7 +15,6 @@
     <property name="user.country" value="ID"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
-    <property name="test" value="TestRunner.java"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="/Users/sannyeliza/Documents/Sanny/Kitabisa/Study/Sharing Session/Karate"/>
     <property name="java.runtime.version" value="1.8.0_301-b09"/>
@@ -47,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dtest=TestRunner.java"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -65,26 +64,6 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="[posts/post] Get post" name="[1:3] get post list" time="0.718">
-    <error message="http call failed after 686 milliseconds for url: https://jsonplaceholder.typicode.com/posts
-classpath:posts/post.feature:6" type="com.intuit.karate.KarateException">com.intuit.karate.KarateException: http call failed after 686 milliseconds for url: https://jsonplaceholder.typicode.com/posts
-classpath:posts/post.feature:6
-	at &lt;feature&gt;.: When method get (classpath:posts/post.feature:6:6)
-</error>
-    <system-out>11:14:25.183 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-11:14:26.923 [main] DEBUG com.intuit.karate - request:
-1 &gt; GET https://jsonplaceholder.typicode.com/posts
-1 &gt; Host: jsonplaceholder.typicode.com
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-11:14:27.245 [main] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: Received fatal alert: decode_error, http call failed after 686 milliseconds for url: https://jsonplaceholder.typicode.com/posts
-11:14:27.246 [main] ERROR com.intuit.karate - classpath:posts/post.feature:6
-When method get
-http call failed after 686 milliseconds for url: https://jsonplaceholder.typicode.com/posts
-classpath:posts/post.feature:6
-</system-out>
-  </testcase>
+  <testcase classname="[posts/post] Method Get Post" name="[1:7] get post list" time="8.269"/>
+  <testcase classname="[posts/post] Method Get Post" name="[2:12] create post" time="0.884"/>
 </testsuite>

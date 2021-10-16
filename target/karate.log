@@ -1,5 +1,5 @@
-10:56:29.392 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-10:56:31.715 [main] DEBUG com.intuit.karate - request:
+11:57:38.724 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:57:39.778 [main] DEBUG com.intuit.karate - request:
 1 > GET https://jsonplaceholder.typicode.com/posts
 1 > Host: jsonplaceholder.typicode.com
 1 > Connection: Keep-Alive
@@ -7,16 +7,16 @@
 1 > Accept-Encoding: gzip,deflate
 
 
-10:56:33.498 [main] DEBUG com.intuit.karate - response time in milliseconds: 1778
+11:57:47.696 [main] DEBUG com.intuit.karate - response time in milliseconds: 7912
 1 < 200
-1 < Date: Sat, 16 Oct 2021 03:56:33 GMT
+1 < Date: Sat, 16 Oct 2021 04:57:47 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
 1 < x-powered-by: Express
 1 < x-ratelimit-limit: 1000
-1 < x-ratelimit-remaining: 998
-1 < x-ratelimit-reset: 1633908069
+1 < x-ratelimit-remaining: 999
+1 < x-ratelimit-reset: 1633425508
 1 < vary: Origin, Accept-Encoding
 1 < access-control-allow-credentials: true
 1 < cache-control: max-age=43200
@@ -26,12 +26,12 @@
 1 < etag: W/"6b80-Ybsq/K6GwwqrYkAsFxqDXGC7DoM"
 1 < via: 1.1 vegur
 1 < CF-Cache-Status: HIT
-1 < Age: 14926
+1 < Age: 10800
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=RHceyA%2BBeanqUXJs0OLHiu6EqBqDaz%2Fj2gV773IfBaX%2B%2Fk4PuxB4HT5sIete7YdnAA7leKj05ytQwJmFBvEPwO%2BoXB6clPSu8CssgGyk71UqgDi3hcYC4f0%2FAmuCiYy8IE2IOSF565q8M3S20jM5"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Q9syBvlFdv4b0X6BqEYmotWZ4sDhj50Ln9c%2FAGuv1awqOnDfncEp4yf69Epda7bgGOixFOO6T0ADTbZ8IhEeFO4a4GdlOoVW%2B0RY4apu5aRTIQZ8sCca3IjLZYpwBykxjJ5PPvAVmMtZFMV%2F3Qlv"}],"group":"cf-nel","max_age":604800}
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < CF-RAY: 69ee5ba7da8b6bb7-SIN
+1 < CF-RAY: 69eeb55a6ecdc3a9-SIN
 1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
 [
   {
@@ -635,17 +635,41 @@
     "body": "cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut"
   }
 ]
-11:14:25.183 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-11:14:26.923 [main] DEBUG com.intuit.karate - request:
-1 > GET https://jsonplaceholder.typicode.com/posts
+11:57:47.807 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/posts
 1 > Host: jsonplaceholder.typicode.com
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_301)
 1 > Accept-Encoding: gzip,deflate
 
 
-11:14:27.245 [main] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: Received fatal alert: decode_error, http call failed after 686 milliseconds for url: https://jsonplaceholder.typicode.com/posts
-11:14:27.246 [main] ERROR com.intuit.karate - classpath:posts/post.feature:6
-When method get
-http call failed after 686 milliseconds for url: https://jsonplaceholder.typicode.com/posts
-classpath:posts/post.feature:6
+11:57:48.681 [main] DEBUG com.intuit.karate - response time in milliseconds: 873
+1 < 201
+1 < Date: Sat, 16 Oct 2021 04:57:48 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 15
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < x-ratelimit-limit: 1000
+1 < x-ratelimit-remaining: 999
+1 < x-ratelimit-reset: 1634360280
+1 < vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < access-control-allow-credentials: true
+1 < cache-control: no-cache
+1 < pragma: no-cache
+1 < expires: -1
+1 < access-control-expose-headers: Location
+1 < location: http://jsonplaceholder.typicode.com/posts/101
+1 < x-content-type-options: nosniff
+1 < etag: W/"f-4jjw4Y8q22Yv1PV9m28FczJgjzk"
+1 < via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=j4LmbSMbgKpk7od4CDIjxsLLmmLBK6Io7io9eyUVCv%2B%2FfFn8cxBeK7E9z2Dua7gkwnoP9mx11U9xvYp7%2FEFdY88rHgMWaML3i%2FIqbIVDSl5pnusomqU91bFfWgeWWLvaddQHzdM1CzFCRIp0GPHB"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 69eeb55dbb2e6c6c-SIN
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{
+  "id": 101
+}
